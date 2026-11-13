@@ -1,0 +1,18 @@
+# Sistema e editores
+.DS_Store
+~$*
+.venv/
+__pycache__/
+*.py[cod]
+
+# Modelos e ficheiros gerados
+*.model
+*.log
+*.png
+*.zip
+
+# Partições ARFF locais
+/Lab7/wdbc-train.arff
+/Lab7/wdbc-test.arff
+/Lab8/train_ionosphere.arff
+/Lab8/test_ionosphere.arff

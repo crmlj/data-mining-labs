@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 9 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     ionosphere-weka.filters.supervised.instance.StratifiedRemoveFolds-S1-V-N5-F2
+Instances:    281
+Attributes:   35
+              a01
+              a02
+              a03
+              a04
+              a05
+              a06
+              a07
+              a08
+              a09
+              a10
+              a11
+              a12
+              a13
+              a14
+              a15
+              a16
+              a17
+              a18
+              a19
+              a20
+              a21
+              a22
+              a23
+              a24
+              a25
+              a26
+              a27
+              a28
+              a29
+              a30
+              a31
+              a32
+              a33
+              a34
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 9 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         230               81.8505 %
+Incorrectly Classified Instances        51               18.1495 %
+Kappa statistic                          0.5673
+Mean absolute error                      0.211 
+Root mean squared error                  0.3753
+Relative absolute error                 45.7921 %
+Root relative squared error             78.2088 %
+Total Number of Instances              281     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,545    0,028    0,917      0,545    0,683      0,605    0,916     0,855     b
+                 0,972    0,455    0,792      0,972    0,873      0,605    0,916     0,924     g
+Weighted Avg.    0,819    0,302    0,837      0,819    0,805      0,605    0,916     0,900     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  55  46 |   a = b
+   5 175 |   b = g
+

@@ -1,0 +1,574 @@
+{
+  "weka_version": "3.8.7",
+  "classifier": "weka.classifiers.lazy.IBk",
+  "dataset": "wdbc-train.arff",
+  "dataset_sha256": "9a2d2930ecb72eaf8320c33b1846f23b02d3aaeed2d95a1fd4da8ad1170d290f",
+  "instances": 512,
+  "class_counts": {
+    "B": 321,
+    "M": 191
+  },
+  "positive_class": "M",
+  "folds": 10,
+  "seed": 1,
+  "distance": "EuclideanDistance",
+  "distance_normalization": true,
+  "distance_weighting": "none",
+  "internal_k_selection": false,
+  "search": "LinearNNSearch",
+  "completed": 10,
+  "evaluations": [
+    {
+      "k": 1,
+      "accuracy_percent": 94.5313,
+      "correct": 484,
+      "incorrect": 28,
+      "precision_M": 0.931,
+      "recall_M": 0.921,
+      "F1_M": 0.926,
+      "exact_metrics_M": {
+        "precision": 0.9312169312169312,
+        "recall": 0.9214659685863874,
+        "F1": 0.9263157894736842
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          176,
+          15
+        ],
+        "B": [
+          13,
+          308
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K1.txt",
+      "source_file_sha256": "186327dc9850d2ddd4a63f7001e0590e8e4dbd7fa7cc756d10e8e97973daa706",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "1",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.17,
+      "completed_at": "2026-11-04T08:50:09.489925+00:00"
+    },
+    {
+      "k": 3,
+      "accuracy_percent": 96.6797,
+      "correct": 495,
+      "incorrect": 17,
+      "precision_M": 0.978,
+      "recall_M": 0.932,
+      "F1_M": 0.954,
+      "exact_metrics_M": {
+        "precision": 0.978021978021978,
+        "recall": 0.9319371727748691,
+        "F1": 0.9544235924932976
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          178,
+          13
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K3.txt",
+      "source_file_sha256": "d43497a115611c55ad588a1d142d64e1c31ffe902c2a249e77a49a91ff1b9856",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "3",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.162,
+      "completed_at": "2026-11-04T08:50:09.652485+00:00"
+    },
+    {
+      "k": 5,
+      "accuracy_percent": 96.875,
+      "correct": 496,
+      "incorrect": 16,
+      "precision_M": 0.983,
+      "recall_M": 0.932,
+      "F1_M": 0.957,
+      "exact_metrics_M": {
+        "precision": 0.9834254143646409,
+        "recall": 0.9319371727748691,
+        "F1": 0.956989247311828
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          178,
+          13
+        ],
+        "B": [
+          3,
+          318
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K5.txt",
+      "source_file_sha256": "267f311d37daffc5755eb3954fce0e8634a1962db4b9ac4c9241859a4ca6ab24",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "5",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.156,
+      "completed_at": "2026-11-04T08:50:09.808804+00:00"
+    },
+    {
+      "k": 7,
+      "accuracy_percent": 96.875,
+      "correct": 496,
+      "incorrect": 16,
+      "precision_M": 0.978,
+      "recall_M": 0.937,
+      "F1_M": 0.957,
+      "exact_metrics_M": {
+        "precision": 0.9781420765027322,
+        "recall": 0.93717277486911,
+        "F1": 0.9572192513368984
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          179,
+          12
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K7.txt",
+      "source_file_sha256": "a6d19af566a2d1d0d8202408edf9901e1c0e5bf67b0fbc58e64cb4aad11df8e6",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "7",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.157,
+      "completed_at": "2026-11-04T08:50:09.966423+00:00"
+    },
+    {
+      "k": 9,
+      "accuracy_percent": 97.0703,
+      "correct": 497,
+      "incorrect": 15,
+      "precision_M": 0.989,
+      "recall_M": 0.932,
+      "F1_M": 0.96,
+      "exact_metrics_M": {
+        "precision": 0.9888888888888889,
+        "recall": 0.9319371727748691,
+        "F1": 0.9595687331536388
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          178,
+          13
+        ],
+        "B": [
+          2,
+          319
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K9.txt",
+      "source_file_sha256": "ff2998ba281eddfc39bc25fc8adf5e0f3b6ecd2b20ce95dd373bacb6b92d9f3b",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "9",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.161,
+      "completed_at": "2026-11-04T08:50:10.127917+00:00"
+    },
+    {
+      "k": 11,
+      "accuracy_percent": 96.875,
+      "correct": 496,
+      "incorrect": 16,
+      "precision_M": 0.994,
+      "recall_M": 0.921,
+      "F1_M": 0.957,
+      "exact_metrics_M": {
+        "precision": 0.9943502824858758,
+        "recall": 0.9214659685863874,
+        "F1": 0.9565217391304348
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          176,
+          15
+        ],
+        "B": [
+          1,
+          320
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K11.txt",
+      "source_file_sha256": "0c3a3e6bb339e89ccf9a55b9ca18887145067bcc602dc2f2061a5ece94e6d686",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "11",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.162,
+      "completed_at": "2026-11-04T08:50:10.290820+00:00"
+    },
+    {
+      "k": 15,
+      "accuracy_percent": 96.4844,
+      "correct": 494,
+      "incorrect": 18,
+      "precision_M": 0.989,
+      "recall_M": 0.916,
+      "F1_M": 0.951,
+      "exact_metrics_M": {
+        "precision": 0.9887005649717514,
+        "recall": 0.9162303664921466,
+        "F1": 0.9510869565217391
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          175,
+          16
+        ],
+        "B": [
+          2,
+          319
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K15.txt",
+      "source_file_sha256": "f2e0d237cf189afd2579197b2f7ff060d979e9c433693d7f1cbc7ba06b5dba84",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "15",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.168,
+      "completed_at": "2026-11-04T08:50:10.458917+00:00"
+    },
+    {
+      "k": 19,
+      "accuracy_percent": 96.6797,
+      "correct": 495,
+      "incorrect": 17,
+      "precision_M": 0.994,
+      "recall_M": 0.916,
+      "F1_M": 0.954,
+      "exact_metrics_M": {
+        "precision": 0.9943181818181818,
+        "recall": 0.9162303664921466,
+        "F1": 0.9536784741144414
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          175,
+          16
+        ],
+        "B": [
+          1,
+          320
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K19.txt",
+      "source_file_sha256": "9ed747b5a9d9f6d5ea254fb8361e2a3e8d9697bd56203e1513b36934c20758c0",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "19",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.159,
+      "completed_at": "2026-11-04T08:50:10.617908+00:00"
+    },
+    {
+      "k": 25,
+      "accuracy_percent": 95.7031,
+      "correct": 490,
+      "incorrect": 22,
+      "precision_M": 0.977,
+      "recall_M": 0.906,
+      "F1_M": 0.94,
+      "exact_metrics_M": {
+        "precision": 0.9774011299435028,
+        "recall": 0.9057591623036649,
+        "F1": 0.9402173913043478
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          173,
+          18
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K25.txt",
+      "source_file_sha256": "13c107bc6423ffb9cf584912c83011446292ee01f1e94ff8daf123c1b07d55fa",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "25",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.165,
+      "completed_at": "2026-11-04T08:50:10.783633+00:00"
+    },
+    {
+      "k": 31,
+      "accuracy_percent": 95.7031,
+      "correct": 490,
+      "incorrect": 22,
+      "precision_M": 0.988,
+      "recall_M": 0.895,
+      "F1_M": 0.94,
+      "exact_metrics_M": {
+        "precision": 0.9884393063583815,
+        "recall": 0.8952879581151832,
+        "F1": 0.9395604395604396
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          171,
+          20
+        ],
+        "B": [
+          2,
+          319
+        ]
+      },
+      "verified": true,
+      "source_file": "IBk_K31.txt",
+      "source_file_sha256": "8be4149f1291698400b1414f97ea14329ab9afb238dd41629fbb07ea2b14f178",
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.lazy.IBk",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-K",
+        "31",
+        "-W",
+        "0",
+        "-A",
+        "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+      ],
+      "elapsed_seconds": 0.161,
+      "completed_at": "2026-11-04T08:50:10.944659+00:00"
+    }
+  ],
+  "best": {
+    "accuracy_k": [
+      9
+    ],
+    "F1_M_k": [
+      9
+    ],
+    "recall_M_k": [
+      7
+    ]
+  },
+  "holdout_used": false
+}

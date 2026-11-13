@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     ionosphere-weka.filters.supervised.instance.StratifiedRemoveFolds-S1-V-N5-F2
+Instances:    281
+Attributes:   35
+              a01
+              a02
+              a03
+              a04
+              a05
+              a06
+              a07
+              a08
+              a09
+              a10
+              a11
+              a12
+              a13
+              a14
+              a15
+              a16
+              a17
+              a18
+              a19
+              a20
+              a21
+              a22
+              a23
+              a24
+              a25
+              a26
+              a27
+              a28
+              a29
+              a30
+              a31
+              a32
+              a33
+              a34
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+a05 <= 0.0409: b (54.0)
+a05 > 0.0409
+|   a01 <= 0: b (16.0)
+|   a01 > 0
+|   |   a08 <= -0.39896
+|   |   |   a19 <= 0.92188
+|   |   |   |   a07 <= 0.78575: b (3.0)
+|   |   |   |   a07 > 0.78575: g (4.0)
+|   |   |   a19 > 0.92188: b (9.0)
+|   |   a08 > -0.39896
+|   |   |   a27 <= 0.99842
+|   |   |   |   a09 <= 0.76087
+|   |   |   |   |   a06 <= 0.21908
+|   |   |   |   |   |   a16 <= 0.11224
+|   |   |   |   |   |   |   a26 <= -0.2549: b (4.0/1.0)
+|   |   |   |   |   |   |   a26 > -0.2549: g (31.0)
+|   |   |   |   |   |   a16 > 0.11224
+|   |   |   |   |   |   |   a32 <= 0.16794: b (6.0)
+|   |   |   |   |   |   |   a32 > 0.16794: g (6.0/1.0)
+|   |   |   |   |   a06 > 0.21908: g (47.0)
+|   |   |   |   a09 > 0.76087: g (82.0)
+|   |   |   a27 > 0.99842
+|   |   |   |   a03 <= 0.71521: b (6.0)
+|   |   |   |   a03 > 0.71521
+|   |   |   |   |   a16 <= 0.85038: g (10.0)
+|   |   |   |   |   a16 > 0.85038: b (3.0)
+
+Number of Leaves  : 	14
+
+Size of the tree : 	27
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         247               87.9004 %
+Incorrectly Classified Instances        34               12.0996 %
+Kappa statistic                          0.7278
+Mean absolute error                      0.1314
+Root mean squared error                  0.3317
+Relative absolute error                 28.5083 %
+Root relative squared error             69.1213 %
+Total Number of Instances              281     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,752    0,050    0,894      0,752    0,817      0,734    0,869     0,872     b
+                 0,950    0,248    0,872      0,950    0,910      0,734    0,869     0,868     g
+Weighted Avg.    0,879    0,177    0,880      0,879    0,876      0,734    0,869     0,869     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  76  25 |   a = b
+   9 171 |   b = g
+

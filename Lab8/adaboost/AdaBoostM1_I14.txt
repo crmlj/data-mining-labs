@@ -1,0 +1,372 @@
+=== Run information ===
+Scheme: weka.classifiers.meta.AdaBoostM1
+Training file: train_ionosphere.arff
+Training SHA256: 864870c394d824a90a7e1ff10cbaac1ffeba450f008e913641153e9f0821f927
+Weka: 3.8.7
+Test mode: stratified 10-fold cross-validation; evaluation seed 1
+numIterations: 14; classifier seed: 1; base classifier: DecisionStump
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java --add-opens java.base/java.lang=ALL-UNNAMED -Djava.awt.headless=true -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.meta.AdaBoostM1 -t 'Lab8/train_ionosphere.arff' -c last -x 10 -s 1 -v -I 14 -S 1 -W weka.classifiers.trees.DecisionStump
+
+
+Options: -I 14 -S 1 -W weka.classifiers.trees.DecisionStump 
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+a05 <= 0.041440000000000005 : b
+a05 > 0.041440000000000005 : g
+a05 is missing : g
+
+Class distributions
+
+a05 <= 0.041440000000000005
+b	g	
+1.0	0.0	
+a05 > 0.041440000000000005
+b	g	
+0.20704845814977973	0.7929515418502202	
+a05 is missing
+b	g	
+0.3594306049822064	0.6405693950177936	
+
+
+Weight: 1.61
+
+Decision Stump
+
+Classifications
+
+a27 <= 0.9992099999999999 : g
+a27 > 0.9992099999999999 : b
+a27 is missing : b
+
+Class distributions
+
+a27 <= 0.9992099999999999
+b	g	
+0.3601857783472127	0.6398142216527872	
+a27 > 0.9992099999999999
+b	g	
+0.9505679427850232	0.04943205721497674	
+a27 is missing
+b	g	
+0.6153846153846148	0.3846153846153853	
+
+
+Weight: 1.23
+
+Decision Stump
+
+Classifications
+
+a07 <= 0.016989999999999998 : b
+a07 > 0.016989999999999998 : b
+a07 is missing : b
+
+Class distributions
+
+a07 <= 0.016989999999999998
+b	g	
+0.9902101438064368	0.00978985619356325	
+a07 > 0.016989999999999998
+b	g	
+0.6112351886088261	0.388764811391174	
+a07 is missing
+b	g	
+0.7180836848430376	0.2819163151569623	
+
+
+Weight: 0.93
+
+Decision Stump
+
+Classifications
+
+a03 <= 0.19028 : b
+a03 > 0.19028 : g
+a03 is missing : g
+
+Class distributions
+
+a03 <= 0.19028
+b	g	
+1.0	0.0	
+a03 > 0.19028
+b	g	
+0.39447552790091694	0.6055244720990831	
+a03 is missing
+b	g	
+0.4999999999999985	0.5000000000000016	
+
+
+Weight: 0.73
+
+Decision Stump
+
+Classifications
+
+a07 <= 0.016989999999999998 : b
+a07 > 0.016989999999999998 : b
+a07 is missing : b
+
+Class distributions
+
+a07 <= 0.016989999999999998
+b	g	
+0.983508322630248	0.016491677369751906	
+a07 > 0.016989999999999998
+b	g	
+0.5292345388753817	0.47076546112461826	
+a07 is missing
+b	g	
+0.6292283951363277	0.37077160486367233	
+
+
+Weight: 0.53
+
+Decision Stump
+
+Classifications
+
+a07 <= 0.016989999999999998 : b
+a07 > 0.016989999999999998 : g
+a07 is missing : g
+
+Class distributions
+
+a07 <= 0.016989999999999998
+b	g	
+0.9723304235421439	0.027669576457856084	
+a07 > 0.016989999999999998
+b	g	
+0.398471878157543	0.601528121842457	
+a07 is missing
+b	g	
+0.4999999999999983	0.5000000000000017	
+
+
+Weight: 0.7
+
+Decision Stump
+
+Classifications
+
+a28 <= 0.13698 : g
+a28 > 0.13698 : b
+a28 is missing : b
+
+Class distributions
+
+a28 <= 0.13698
+b	g	
+0.4550447551230551	0.5449552448769449	
+a28 > 0.13698
+b	g	
+0.8280176577684042	0.17198234223159586	
+a28 is missing
+b	g	
+0.6215767753187333	0.37842322468126666	
+
+
+Weight: 0.71
+
+Decision Stump
+
+Classifications
+
+a04 <= -0.146965 : b
+a04 > -0.146965 : b
+a04 is missing : b
+
+Class distributions
+
+a04 <= -0.146965
+b	g	
+0.9272604170736076	0.07273958292639231	
+a04 > -0.146965
+b	g	
+0.5522747259566463	0.44772527404335377	
+a04 is missing
+b	g	
+0.6585270204470085	0.34147297955299144	
+
+
+Weight: 0.66
+
+Decision Stump
+
+Classifications
+
+a08 <= -0.48282 : b
+a08 > -0.48282 : g
+a08 is missing : g
+
+Class distributions
+
+a08 <= -0.48282
+b	g	
+0.9599409756132462	0.040059024386753704	
+a08 > -0.48282
+b	g	
+0.41894773417490183	0.5810522658250982	
+a08 is missing
+b	g	
+0.4999999999999996	0.5000000000000003	
+
+
+Weight: 0.57
+
+Decision Stump
+
+Classifications
+
+a03 <= 0.7394700000000001 : b
+a03 > 0.7394700000000001 : g
+a03 is missing : b
+
+Class distributions
+
+a03 <= 0.7394700000000001
+b	g	
+0.8217224353415904	0.1782775646584096	
+a03 > 0.7394700000000001
+b	g	
+0.4189677401354046	0.5810322598645953	
+a03 is missing
+b	g	
+0.6044579579044769	0.3955420420955232	
+
+
+Weight: 0.81
+
+Decision Stump
+
+Classifications
+
+a04 <= -0.146965 : b
+a04 > -0.146965 : b
+a04 is missing : b
+
+Class distributions
+
+a04 <= -0.146965
+b	g	
+0.9098688080888344	0.0901311919111656	
+a04 > -0.146965
+b	g	
+0.5280302862370604	0.47196971376293956	
+a04 is missing
+b	g	
+0.6402518481366951	0.35974815186330483	
+
+
+Weight: 0.58
+
+Decision Stump
+
+Classifications
+
+a04 <= -0.146965 : b
+a04 > -0.146965 : g
+a04 is missing : g
+
+Class distributions
+
+a04 <= -0.146965
+b	g	
+0.8501243550381536	0.14987564496184635	
+a04 > -0.146965
+b	g	
+0.38598553813615505	0.614014461863845	
+a04 is missing
+b	g	
+0.49999999999999717	0.5000000000000029	
+
+
+Weight: 0.72
+
+Decision Stump
+
+Classifications
+
+a06 <= -0.74729 : b
+a06 > -0.74729 : b
+a06 is missing : b
+
+Class distributions
+
+a06 <= -0.74729
+b	g	
+0.9925006231686173	0.007499376831382694	
+a06 > -0.74729
+b	g	
+0.526411547588502	0.473588452411498	
+a06 is missing
+b	g	
+0.5992515271117587	0.40074847288824134	
+
+
+Weight: 0.4
+
+Decision Stump
+
+Classifications
+
+a06 <= -0.74729 : b
+a06 > -0.74729 : g
+a06 is missing : g
+
+Class distributions
+
+a06 <= -0.74729
+b	g	
+0.9888274533310181	0.011172546668981808	
+a06 > -0.74729
+b	g	
+0.4263881601641553	0.5736118398358447	
+a06 is missing
+b	g	
+0.4999999999999985	0.5000000000000016	
+
+
+Weight: 0.52
+
+Number of performed Iterations: 14
+
+
+Time taken to build model: 0.07 seconds
+
+Time taken to perform cross-validation: 0.1 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         257               91.4591 %
+Incorrectly Classified Instances        24                8.5409 %
+Kappa statistic                          0.807 
+Mean absolute error                      0.1339
+Root mean squared error                  0.2566
+Relative absolute error                 29.0545 %
+Root relative squared error             53.469  %
+Total Number of Instances              281     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,792    0,017    0,964      0,792    0,870      0,816    0,945     0,946     b
+                 0,983    0,208    0,894      0,983    0,937      0,816    0,945     0,940     g
+Weighted Avg.    0,915    0,139    0,919      0,915    0,912      0,816    0,945     0,942     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  80  21 |   a = b
+   3 177 |   b = g
+

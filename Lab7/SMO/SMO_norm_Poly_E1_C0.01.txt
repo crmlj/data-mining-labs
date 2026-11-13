@@ -1,0 +1,92 @@
+=== Run information ===
+Dataset: wdbc-train.arff (512 instances; 30 predictors; ID removed)
+Class: attribute 1, Diagnosis; positive class M
+Test mode: stratified 10-fold cross-validation; seed 1
+Normalization: norm (SMO internal -N 0)
+Dataset SHA256: 9a2d2930ecb72eaf8320c33b1846f23b02d3aaeed2d95a1fd4da8ad1170d290f
+Weka: 3.8.7, installed application runtime
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java -Djava.awt.headless=true -Xmx1024m -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.functions.SMO -t 'Lab7/wdbc-train.arff' -c 1 -x 10 -s 1 -v -C 0.01 -N 0 -W 1 -K 'weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007'
+
+
+Options: -C 0.01 -N 0 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007" 
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: M, B
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3175 * (normalized) a1
+ +      -0.1734 * (normalized) a2
+ +      -0.3228 * (normalized) a3
+ +      -0.2779 * (normalized) a4
+ +      -0.1237 * (normalized) a5
+ +      -0.2198 * (normalized) a6
+ +      -0.3217 * (normalized) a7
+ +      -0.3948 * (normalized) a8
+ +      -0.1268 * (normalized) a9
+ +       0.0232 * (normalized) a10
+ +      -0.1667 * (normalized) a11
+ +      -0.0143 * (normalized) a12
+ +      -0.1448 * (normalized) a13
+ +      -0.1296 * (normalized) a14
+ +       0.0016 * (normalized) a15
+ +      -0.061  * (normalized) a16
+ +      -0.0205 * (normalized) a17
+ +      -0.0995 * (normalized) a18
+ +      -0.0171 * (normalized) a19
+ +       0.0004 * (normalized) a20
+ +      -0.4065 * (normalized) a21
+ +      -0.2288 * (normalized) a22
+ +      -0.3919 * (normalized) a23
+ +      -0.3516 * (normalized) a24
+ +      -0.1786 * (normalized) a25
+ +      -0.2118 * (normalized) a26
+ +      -0.2594 * (normalized) a27
+ +      -0.4535 * (normalized) a28
+ +      -0.1482 * (normalized) a29
+ +      -0.095  * (normalized) a30
+ +       2.0619
+
+Number of kernel evaluations: 1834 (54.161% cached)
+
+
+
+Time taken to build model: 0.05 seconds
+
+Time taken to perform cross-validation: 0.06 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         447               87.3047 %
+Incorrectly Classified Instances        65               12.6953 %
+Kappa statistic                          0.7085
+Mean absolute error                      0.127 
+Root mean squared error                  0.3563
+Relative absolute error                 27.132  %
+Root relative squared error             73.6746 %
+Total Number of Instances              512     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,660    0,000    1,000      0,660    0,795      0,741    0,830     0,787     M
+                 1,000    0,340    0,832      1,000    0,908      0,741    0,830     0,832     B
+Weighted Avg.    0,873    0,213    0,894      0,873    0,866      0,741    0,830     0,815     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 126  65 |   a = M
+   0 321 |   b = B
+

@@ -1,0 +1,142 @@
+=== Run information ===
+Scheme: weka.classifiers.meta.AdaBoostM1
+Training file: train_ionosphere.arff
+Training SHA256: 864870c394d824a90a7e1ff10cbaac1ffeba450f008e913641153e9f0821f927
+Weka: 3.8.7
+Test mode: stratified 10-fold cross-validation; evaluation seed 1
+numIterations: 4; classifier seed: 1; base classifier: DecisionStump
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java --add-opens java.base/java.lang=ALL-UNNAMED -Djava.awt.headless=true -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.meta.AdaBoostM1 -t 'Lab8/train_ionosphere.arff' -c last -x 10 -s 1 -v -I 4 -S 1 -W weka.classifiers.trees.DecisionStump
+
+
+Options: -I 4 -S 1 -W weka.classifiers.trees.DecisionStump 
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+a05 <= 0.041440000000000005 : b
+a05 > 0.041440000000000005 : g
+a05 is missing : g
+
+Class distributions
+
+a05 <= 0.041440000000000005
+b	g	
+1.0	0.0	
+a05 > 0.041440000000000005
+b	g	
+0.20704845814977973	0.7929515418502202	
+a05 is missing
+b	g	
+0.3594306049822064	0.6405693950177936	
+
+
+Weight: 1.61
+
+Decision Stump
+
+Classifications
+
+a27 <= 0.9992099999999999 : g
+a27 > 0.9992099999999999 : b
+a27 is missing : b
+
+Class distributions
+
+a27 <= 0.9992099999999999
+b	g	
+0.3601857783472127	0.6398142216527872	
+a27 > 0.9992099999999999
+b	g	
+0.9505679427850232	0.04943205721497674	
+a27 is missing
+b	g	
+0.6153846153846148	0.3846153846153853	
+
+
+Weight: 1.23
+
+Decision Stump
+
+Classifications
+
+a07 <= 0.016989999999999998 : b
+a07 > 0.016989999999999998 : b
+a07 is missing : b
+
+Class distributions
+
+a07 <= 0.016989999999999998
+b	g	
+0.9902101438064368	0.00978985619356325	
+a07 > 0.016989999999999998
+b	g	
+0.6112351886088261	0.388764811391174	
+a07 is missing
+b	g	
+0.7180836848430376	0.2819163151569623	
+
+
+Weight: 0.93
+
+Decision Stump
+
+Classifications
+
+a03 <= 0.19028 : b
+a03 > 0.19028 : g
+a03 is missing : g
+
+Class distributions
+
+a03 <= 0.19028
+b	g	
+1.0	0.0	
+a03 > 0.19028
+b	g	
+0.39447552790091694	0.6055244720990831	
+a03 is missing
+b	g	
+0.4999999999999985	0.5000000000000016	
+
+
+Weight: 0.73
+
+Number of performed Iterations: 4
+
+
+Time taken to build model: 0.06 seconds
+
+Time taken to perform cross-validation: 0.05 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         240               85.4093 %
+Incorrectly Classified Instances        41               14.5907 %
+Kappa statistic                          0.6538
+Mean absolute error                      0.1867
+Root mean squared error                  0.3068
+Relative absolute error                 40.5187 %
+Root relative squared error             63.9399 %
+Total Number of Instances              281     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,604    0,006    0,984      0,604    0,748      0,692    0,882     0,891     b
+                 0,994    0,396    0,817      0,994    0,897      0,692    0,882     0,871     g
+Weighted Avg.    0,854    0,256    0,877      0,854    0,844      0,692    0,882     0,878     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  61  40 |   a = b
+   1 179 |   b = g
+

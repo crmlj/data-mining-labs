@@ -1,0 +1,53 @@
+=== Run information ===
+Scheme: weka.classifiers.lazy.IBk
+Dataset: wdbc-train.arff; 512 instances; 191 M / 321 B
+Attributes: 31; Diagnosis is class (attribute 1); 30 numeric predictors; ID removed
+Positive class: M
+Test mode: stratified 10-fold cross-validation; evaluation seed 1
+Distance: EuclideanDistance, internal normalization enabled (no -D)
+Search: LinearNNSearch; distance weighting: none; windowSize: 0
+Internal automatic k selection: disabled (no -X); requested k is fixed
+Weka: 3.8.7 installed Java runtime; no Python classification model
+Dataset SHA256: 9a2d2930ecb72eaf8320c33b1846f23b02d3aaeed2d95a1fd4da8ad1170d290f
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java --add-opens java.base/java.lang=ALL-UNNAMED -Djava.awt.headless=true -Xmx1024m -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.lazy.IBk -t 'Lab7/wdbc-train.arff' -c 1 -x 10 -s 1 -v -K 9 -W 0 -A 'weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last"'
+
+
+Options: -K 9 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last"" 
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 9 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.06 seconds
+
+Time taken to perform cross-validation: 0.04 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         497               97.0703 %
+Incorrectly Classified Instances        15                2.9297 %
+Kappa statistic                          0.9366
+Mean absolute error                      0.059 
+Root mean squared error                  0.165 
+Relative absolute error                 12.6143 %
+Root relative squared error             34.1179 %
+Total Number of Instances              512     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,932    0,006    0,989      0,932    0,960      0,938    0,989     0,986     M
+                 0,994    0,068    0,961      0,994    0,977      0,938    0,989     0,988     B
+Weighted Avg.    0,971    0,045    0,971      0,971    0,971      0,938    0,989     0,987     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 178  13 |   a = M
+   2 319 |   b = B
+

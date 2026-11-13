@@ -1,0 +1,92 @@
+=== Run information ===
+Dataset: wdbc-train.arff (512 instances; 30 predictors; ID removed)
+Class: attribute 1, Diagnosis; positive class M
+Test mode: stratified 10-fold cross-validation; seed 1
+Normalization: semNorm (SMO internal -N 2)
+Dataset SHA256: 9a2d2930ecb72eaf8320c33b1846f23b02d3aaeed2d95a1fd4da8ad1170d290f
+Weka: 3.8.7, installed application runtime
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java -Djava.awt.headless=true -Xmx1024m -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.functions.SMO -t 'Lab7/wdbc-train.arff' -c 1 -x 10 -s 1 -v -C 1 -N 2 -W 1 -K 'weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007'
+
+
+Options: -C 1 -N 2 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007" 
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: M, B
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.7652 * a1
+ +       0.1016 * a2
+ +      -0.042  * a3
+ +      -0.0021 * a4
+ +      -0.2639 * a5
+ +      -0.2739 * a6
+ +      -0.5295 * a7
+ +      -0.3691 * a8
+ +      -0.402  * a9
+ +      -0.0414 * a10
+ +      -0.198  * a11
+ +       0.8182 * a12
+ +       0.4363 * a13
+ +      -0.0811 * a14
+ +      -0.0313 * a15
+ +       0.0544 * a16
+ +      -0.0021 * a17
+ +      -0.0507 * a18
+ +      -0.0625 * a19
+ +       0.0092 * a20
+ +      -0.2235 * a21
+ +      -0.2366 * a22
+ +      -0.0477 * a23
+ +      -0.001  * a24
+ +      -0.5328 * a25
+ +      -0.9139 * a26
+ +      -1.5498 * a27
+ +      -0.795  * a28
+ +      -1.1485 * a29
+ +      -0.1477 * a30
+ +      10.3704
+
+Number of kernel evaluations: 40247 (99.978% cached)
+
+
+
+Time taken to build model: 0.98 seconds
+
+Time taken to perform cross-validation: 18.79 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         488               95.3125 %
+Incorrectly Classified Instances        24                4.6875 %
+Kappa statistic                          0.8989
+Mean absolute error                      0.0469
+Root mean squared error                  0.2165
+Relative absolute error                 10.018  %
+Root relative squared error             44.7679 %
+Total Number of Instances              512     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,916    0,025    0,956      0,916    0,936      0,899    0,946     0,907     M
+                 0,975    0,084    0,951      0,975    0,963      0,899    0,946     0,943     B
+Weighted Avg.    0,953    0,062    0,953      0,953    0,953      0,899    0,946     0,930     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 175  16 |   a = M
+   8 313 |   b = B
+

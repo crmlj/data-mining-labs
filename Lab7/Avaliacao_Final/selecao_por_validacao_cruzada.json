@@ -1,0 +1,191 @@
+{
+  "selection_criterion": "Highest cross-validation F1 of M; accuracy as tie-breaker; same candidate also has highest accuracy",
+  "holdout_consulted_for_selection": false,
+  "candidates": [
+    {
+      "family": "SMO",
+      "result": {
+        "name": "SMO_norm_Poly_E2_C1",
+        "normalization": "norm",
+        "kernel": "Poly",
+        "parameter": 2,
+        "C": 1,
+        "accuracy_percent": 97.8516,
+        "correct": 501,
+        "precision_M": "0,984",
+        "recall_M": "0,958",
+        "F1_M": "0,971",
+        "confusion_matrix_M_B": {
+          "M": [
+            183,
+            8
+          ],
+          "B": [
+            3,
+            318
+          ]
+        },
+        "elapsed_seconds": 0.235,
+        "command": [
+          "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+          "-Djava.awt.headless=true",
+          "-Xmx1024m",
+          "-cp",
+          "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+          "weka.classifiers.functions.SMO",
+          "-t",
+          "Lab7/wdbc-train.arff",
+          "-c",
+          "1",
+          "-x",
+          "10",
+          "-s",
+          "1",
+          "-v",
+          "-C",
+          "1",
+          "-N",
+          "0",
+          "-W",
+          "1",
+          "-K",
+          "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+        ],
+        "completed_at": "2026-11-03T16:53:47.728080+00:00",
+        "source_file": "SMO_norm_Poly_E2_C1.txt",
+        "source_file_sha256": "717a39f9fd5446f0fbcd8ef7cc851eb61ef201d49016d9de4d8a6191bc76997c",
+        "incorrect": 11,
+        "exact_metrics_M": {
+          "precision": 0.9838709677419355,
+          "recall": 0.9581151832460733,
+          "F1": 0.9708222811671088
+        },
+        "cv_seed_printed_in_file": 1,
+        "validation_folds": 10,
+        "verified": true,
+        "scheme": null
+      }
+    },
+    {
+      "family": "KNN",
+      "result": {
+        "k": 9,
+        "accuracy_percent": 97.0703,
+        "correct": 497,
+        "incorrect": 15,
+        "precision_M": 0.989,
+        "recall_M": 0.932,
+        "F1_M": 0.96,
+        "exact_metrics_M": {
+          "precision": 0.9888888888888889,
+          "recall": 0.9319371727748691,
+          "F1": 0.9595687331536388
+        },
+        "confusion_matrix_M_B": {
+          "M": [
+            178,
+            13
+          ],
+          "B": [
+            2,
+            319
+          ]
+        },
+        "verified": true,
+        "source_file": "IBk_K9.txt",
+        "source_file_sha256": "ff2998ba281eddfc39bc25fc8adf5e0f3b6ecd2b20ce95dd373bacb6b92d9f3b",
+        "command": [
+          "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+          "--add-opens",
+          "java.base/java.lang=ALL-UNNAMED",
+          "-Djava.awt.headless=true",
+          "-Xmx1024m",
+          "-cp",
+          "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+          "weka.classifiers.lazy.IBk",
+          "-t",
+          "Lab7/wdbc-train.arff",
+          "-c",
+          "1",
+          "-x",
+          "10",
+          "-s",
+          "1",
+          "-v",
+          "-K",
+          "9",
+          "-W",
+          "0",
+          "-A",
+          "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+        ],
+        "elapsed_seconds": 0.161,
+        "completed_at": "2026-11-04T08:50:10.127917+00:00"
+      }
+    }
+  ],
+  "selected": {
+    "family": "SMO",
+    "result": {
+      "name": "SMO_norm_Poly_E2_C1",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 1,
+      "accuracy_percent": 97.8516,
+      "correct": 501,
+      "precision_M": "0,984",
+      "recall_M": "0,958",
+      "F1_M": "0,971",
+      "confusion_matrix_M_B": {
+        "M": [
+          183,
+          8
+        ],
+        "B": [
+          3,
+          318
+        ]
+      },
+      "elapsed_seconds": 0.235,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:47.728080+00:00",
+      "source_file": "SMO_norm_Poly_E2_C1.txt",
+      "source_file_sha256": "717a39f9fd5446f0fbcd8ef7cc851eb61ef201d49016d9de4d8a6191bc76997c",
+      "incorrect": 11,
+      "exact_metrics_M": {
+        "precision": 0.9838709677419355,
+        "recall": 0.9581151832460733,
+        "F1": 0.9708222811671088
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    }
+  }
+}

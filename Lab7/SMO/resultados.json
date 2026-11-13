@@ -1,0 +1,1905 @@
+{
+  "weka_version": "3.8.7",
+  "dataset": "wdbc-train.arff",
+  "instances": 512,
+  "positive_class": "M",
+  "folds": 10,
+  "seed": 1,
+  "completed": 30,
+  "evaluations": [
+    {
+      "name": "SMO_semNorm_Poly_E1_C1",
+      "normalization": "semNorm",
+      "kernel": "Poly",
+      "parameter": 1,
+      "C": 1,
+      "accuracy_percent": 95.3125,
+      "correct": 488,
+      "precision_M": "0,956",
+      "recall_M": "0,916",
+      "F1_M": "0,936",
+      "confusion_matrix_M_B": {
+        "M": [
+          175,
+          16
+        ],
+        "B": [
+          8,
+          313
+        ]
+      },
+      "elapsed_seconds": 19.863,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:42:59.585650+00:00",
+      "source_file": "SMO_semNorm_Poly_E1_C1.txt",
+      "source_file_sha256": "279e8b60a35d4c618a2cd8bf160e0a973c84d136acf5797f3462f73a6dfe7da3",
+      "incorrect": 24,
+      "exact_metrics_M": {
+        "precision": 0.9562841530054644,
+        "recall": 0.9162303664921466,
+        "F1": 0.9358288770053476
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_Poly_E1_C0.01",
+      "normalization": "semNorm",
+      "kernel": "Poly",
+      "parameter": 1,
+      "C": 0.01,
+      "accuracy_percent": 94.9219,
+      "correct": 486,
+      "precision_M": "0,941",
+      "recall_M": "0,921",
+      "F1_M": "0,931",
+      "confusion_matrix_M_B": {
+        "M": [
+          176,
+          15
+        ],
+        "B": [
+          11,
+          310
+        ]
+      },
+      "elapsed_seconds": 0.487,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:43:00.074098+00:00",
+      "source_file": "SMO_semNorm_Poly_E1_C0.01.txt",
+      "source_file_sha256": "f43b4fa44cadd31827643e5d26e268c9165e2f81d81284b83dfc29ab6ec6a914",
+      "incorrect": 26,
+      "exact_metrics_M": {
+        "precision": 0.9411764705882353,
+        "recall": 0.9214659685863874,
+        "F1": 0.9312169312169312
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_Poly_E1_C100",
+      "source_file": "SMO_semNorm_Poly_E1_C100.txt",
+      "source_file_sha256": "0ade3c50ad0b40b29933b7ff05623ec0d9c069d43542edac13b5cd4171d3ed6d",
+      "accuracy_percent": 96.6797,
+      "correct": 495,
+      "incorrect": 17,
+      "precision_M": "0,958",
+      "recall_M": "0,953",
+      "F1_M": "0,955",
+      "exact_metrics_M": {
+        "precision": 0.9578947368421052,
+        "recall": 0.9528795811518325,
+        "F1": 0.9553805774278216
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          182,
+          9
+        ],
+        "B": [
+          8,
+          313
+        ]
+      },
+      "cv_seed_printed_in_file": null,
+      "validation_folds": 10,
+      "verified": true,
+      "normalization": "semNorm",
+      "kernel": "Poly",
+      "parameter": 1,
+      "C": 100,
+      "scheme": "weka.classifiers.functions.SMO -C 100.0 -L 0.001 -P 1.0E-12 -N 2 -V -1 -W 1 -K \"weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\" -calibrator \"weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4\""
+    },
+    {
+      "name": "SMO_semNorm_Poly_E2_C1",
+      "normalization": "semNorm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 1,
+      "accuracy_percent": 92.1875,
+      "correct": 472,
+      "precision_M": "0,975",
+      "recall_M": "0,812",
+      "F1_M": "0,886",
+      "confusion_matrix_M_B": {
+        "M": [
+          155,
+          36
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "elapsed_seconds": 641.548,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:41.140330+00:00",
+      "source_file": "SMO_semNorm_Poly_E2_C1.txt",
+      "source_file_sha256": "908149dcf07dd2024ccd924f24d39f3b8226bb56c5d8f18a2dc9d56f45f10380",
+      "incorrect": 40,
+      "exact_metrics_M": {
+        "precision": 0.9748427672955975,
+        "recall": 0.8115183246073299,
+        "F1": 0.8857142857142857
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_Poly_E2_C0.01",
+      "normalization": "semNorm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 0.01,
+      "accuracy_percent": 92.1875,
+      "correct": 472,
+      "precision_M": "0,975",
+      "recall_M": "0,812",
+      "F1_M": "0,886",
+      "confusion_matrix_M_B": {
+        "M": [
+          155,
+          36
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "elapsed_seconds": 643.611,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:43.689984+00:00",
+      "source_file": "SMO_semNorm_Poly_E2_C0.01.txt",
+      "source_file_sha256": "bf0b1bec7c9b4fcee12b767b891cace794c5fd7e9e6c958850d9051bdcd0f007",
+      "incorrect": 40,
+      "exact_metrics_M": {
+        "precision": 0.9748427672955975,
+        "recall": 0.8115183246073299,
+        "F1": 0.8857142857142857
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_Poly_E2_C100",
+      "normalization": "semNorm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 100,
+      "accuracy_percent": 92.1875,
+      "correct": 472,
+      "precision_M": "0,975",
+      "recall_M": "0,812",
+      "F1_M": "0,886",
+      "confusion_matrix_M_B": {
+        "M": [
+          155,
+          36
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "elapsed_seconds": 562.651,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T17:03:03.793790+00:00",
+      "source_file": "SMO_semNorm_Poly_E2_C100.txt",
+      "source_file_sha256": "b50a8ff93e678142d4cbc94cc7c203e7406b1dba0fd511d0c89feeaf89e45e03",
+      "incorrect": 40,
+      "exact_metrics_M": {
+        "precision": 0.9748427672955975,
+        "recall": 0.8115183246073299,
+        "F1": 0.8857142857142857
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G0.001_C1",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 0.001,
+      "C": 1,
+      "accuracy_percent": 92.9688,
+      "correct": 476,
+      "precision_M": "0,897",
+      "recall_M": "0,916",
+      "F1_M": "0,907",
+      "confusion_matrix_M_B": {
+        "M": [
+          175,
+          16
+        ],
+        "B": [
+          20,
+          301
+        ]
+      },
+      "elapsed_seconds": 0.379,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 0.001 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:44.069966+00:00",
+      "source_file": "SMO_semNorm_RBF_G0.001_C1.txt",
+      "source_file_sha256": "2da097d2c6075b888ceee87c30017964e505e6cb3dbec2c6cac4d5a4a1c290c9",
+      "incorrect": 36,
+      "exact_metrics_M": {
+        "precision": 0.8974358974358975,
+        "recall": 0.9162303664921466,
+        "F1": 0.9067357512953368
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G0.001_C0.01",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 0.001,
+      "C": 0.01,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.318,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 0.001 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:44.389330+00:00",
+      "source_file": "SMO_semNorm_RBF_G0.001_C0.01.txt",
+      "source_file_sha256": "5ab27068877cce93c38749bc2b6565295c6b0095427325ce667e9cc549cd247b",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G0.001_C100",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 0.001,
+      "C": 100,
+      "accuracy_percent": 91.2109,
+      "correct": 467,
+      "precision_M": "0,869",
+      "recall_M": "0,901",
+      "F1_M": "0,884",
+      "confusion_matrix_M_B": {
+        "M": [
+          172,
+          19
+        ],
+        "B": [
+          26,
+          295
+        ]
+      },
+      "elapsed_seconds": 0.416,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 0.001 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:44.806014+00:00",
+      "source_file": "SMO_semNorm_RBF_G0.001_C100.txt",
+      "source_file_sha256": "f976bd6606ff0759f29dff21907a13ba54796abab0011b5d73f1d4b1b3a9cdcd",
+      "incorrect": 45,
+      "exact_metrics_M": {
+        "precision": 0.8686868686868687,
+        "recall": 0.900523560209424,
+        "F1": 0.884318766066838
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G1_C1",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 1,
+      "C": 1,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.321,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:45.128099+00:00",
+      "source_file": "SMO_semNorm_RBF_G1_C1.txt",
+      "source_file_sha256": "6956e611afcd4211fc3f1fcd354aabd103846e74ed1f9b3e7e83b2f2d9f826c4",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G1_C0.01",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 1,
+      "C": 0.01,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.293,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:45.422197+00:00",
+      "source_file": "SMO_semNorm_RBF_G1_C0.01.txt",
+      "source_file_sha256": "db34ea5671058d89044fd6492c3fcb03d757594a4e2d9848cf2ce74bbfa3f032",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G1_C100",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 1,
+      "C": 100,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.366,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:45.790063+00:00",
+      "source_file": "SMO_semNorm_RBF_G1_C100.txt",
+      "source_file_sha256": "63523d8ba26ada9e198554206dd10c0c2586abfa9eab991b8964b7ae14b65139",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G100_C1",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 100,
+      "C": 1,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.338,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 100 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:46.129177+00:00",
+      "source_file": "SMO_semNorm_RBF_G100_C1.txt",
+      "source_file_sha256": "890b39d5a74f336da695b48efce665520864d43cd792b3240f6b82865608646d",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G100_C0.01",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 100,
+      "C": 0.01,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.299,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 100 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:46.429221+00:00",
+      "source_file": "SMO_semNorm_RBF_G100_C0.01.txt",
+      "source_file_sha256": "e5d764598d88d436af74541a7289f22a27ced072a01446bc06d8c853169ff647",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_semNorm_RBF_G100_C100",
+      "normalization": "semNorm",
+      "kernel": "RBF",
+      "parameter": 100,
+      "C": 100,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.356,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "2",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 100 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:46.786455+00:00",
+      "source_file": "SMO_semNorm_RBF_G100_C100.txt",
+      "source_file_sha256": "df896cc3483c26a987036c19f7326c379971343a178c5e76cf025646e7d95561",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_Poly_E1_C1",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 1,
+      "C": 1,
+      "accuracy_percent": 97.4609,
+      "correct": 499,
+      "precision_M": "0,989",
+      "recall_M": "0,942",
+      "F1_M": "0,965",
+      "confusion_matrix_M_B": {
+        "M": [
+          180,
+          11
+        ],
+        "B": [
+          2,
+          319
+        ]
+      },
+      "elapsed_seconds": 0.217,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:47.004601+00:00",
+      "source_file": "SMO_norm_Poly_E1_C1.txt",
+      "source_file_sha256": "be6fca67b6dabde18f7c8220f9317530349fc3f0cfcfa0915d110aaca4961c07",
+      "incorrect": 13,
+      "exact_metrics_M": {
+        "precision": 0.989010989010989,
+        "recall": 0.9424083769633508,
+        "F1": 0.9651474530831099
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_Poly_E1_C0.01",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 1,
+      "C": 0.01,
+      "accuracy_percent": 87.3047,
+      "correct": 447,
+      "precision_M": "1,000",
+      "recall_M": "0,660",
+      "F1_M": "0,795",
+      "confusion_matrix_M_B": {
+        "M": [
+          126,
+          65
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.209,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:47.214472+00:00",
+      "source_file": "SMO_norm_Poly_E1_C0.01.txt",
+      "source_file_sha256": "302252b15edc30689034c527e05a41b08d5e64b8dc53bc20528d71beb216025a",
+      "incorrect": 65,
+      "exact_metrics_M": {
+        "precision": 1.0,
+        "recall": 0.6596858638743456,
+        "F1": 0.7949526813880127
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_Poly_E1_C100",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 1,
+      "C": 100,
+      "accuracy_percent": 97.4609,
+      "correct": 499,
+      "precision_M": "0,968",
+      "recall_M": "0,963",
+      "F1_M": "0,966",
+      "confusion_matrix_M_B": {
+        "M": [
+          184,
+          7
+        ],
+        "B": [
+          6,
+          315
+        ]
+      },
+      "elapsed_seconds": 0.277,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:47.492172+00:00",
+      "source_file": "SMO_norm_Poly_E1_C100.txt",
+      "source_file_sha256": "8b7039cd672900281647cb62966bb9679d47cba9fd036087d769f29ba7fbfd4a",
+      "incorrect": 13,
+      "exact_metrics_M": {
+        "precision": 0.968421052631579,
+        "recall": 0.9633507853403142,
+        "F1": 0.9658792650918635
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_Poly_E2_C1",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 1,
+      "accuracy_percent": 97.8516,
+      "correct": 501,
+      "precision_M": "0,984",
+      "recall_M": "0,958",
+      "F1_M": "0,971",
+      "confusion_matrix_M_B": {
+        "M": [
+          183,
+          8
+        ],
+        "B": [
+          3,
+          318
+        ]
+      },
+      "elapsed_seconds": 0.235,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:47.728080+00:00",
+      "source_file": "SMO_norm_Poly_E2_C1.txt",
+      "source_file_sha256": "717a39f9fd5446f0fbcd8ef7cc851eb61ef201d49016d9de4d8a6191bc76997c",
+      "incorrect": 11,
+      "exact_metrics_M": {
+        "precision": 0.9838709677419355,
+        "recall": 0.9581151832460733,
+        "F1": 0.9708222811671088
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_Poly_E2_C0.01",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 0.01,
+      "accuracy_percent": 94.7266,
+      "correct": 485,
+      "precision_M": "1,000",
+      "recall_M": "0,859",
+      "F1_M": "0,924",
+      "confusion_matrix_M_B": {
+        "M": [
+          164,
+          27
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.261,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:47.990263+00:00",
+      "source_file": "SMO_norm_Poly_E2_C0.01.txt",
+      "source_file_sha256": "23d813ac932a33a28b1ac4d08eefeb3687a0a6d909bf19e99c83477c3d206f8e",
+      "incorrect": 27,
+      "exact_metrics_M": {
+        "precision": 1.0,
+        "recall": 0.8586387434554974,
+        "F1": 0.923943661971831
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_Poly_E2_C100",
+      "normalization": "norm",
+      "kernel": "Poly",
+      "parameter": 2,
+      "C": 100,
+      "accuracy_percent": 95.8984,
+      "correct": 491,
+      "precision_M": "0,947",
+      "recall_M": "0,942",
+      "F1_M": "0,945",
+      "confusion_matrix_M_B": {
+        "M": [
+          180,
+          11
+        ],
+        "B": [
+          10,
+          311
+        ]
+      },
+      "elapsed_seconds": 0.343,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.PolyKernel -E 2 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:48.335092+00:00",
+      "source_file": "SMO_norm_Poly_E2_C100.txt",
+      "source_file_sha256": "24d11e458a632823e9d494ec0ff09d3595ec0e52fc8c58f2d92fb6672ee650ed",
+      "incorrect": 21,
+      "exact_metrics_M": {
+        "precision": 0.9473684210526315,
+        "recall": 0.9424083769633508,
+        "F1": 0.9448818897637795
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G0.001_C1",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 0.001,
+      "C": 1,
+      "accuracy_percent": 62.8906,
+      "correct": 322,
+      "precision_M": "1,000",
+      "recall_M": "0,005",
+      "F1_M": "0,010",
+      "confusion_matrix_M_B": {
+        "M": [
+          1,
+          190
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.386,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 0.001 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:48.722825+00:00",
+      "source_file": "SMO_norm_RBF_G0.001_C1.txt",
+      "source_file_sha256": "0a039edf32f0afa67697f553f7b1c087b2268661e9105a9e4ecffd35c1087de6",
+      "incorrect": 190,
+      "exact_metrics_M": {
+        "precision": 1.0,
+        "recall": 0.005235602094240838,
+        "F1": 0.010416666666666666
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G0.001_C0.01",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 0.001,
+      "C": 0.01,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.325,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 0.001 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:49.048794+00:00",
+      "source_file": "SMO_norm_RBF_G0.001_C0.01.txt",
+      "source_file_sha256": "0535901e67eb8fd3f1bee4341a9fc9966787b48a9608bf7d8b65627ea39a16d5",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G0.001_C100",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 0.001,
+      "C": 100,
+      "accuracy_percent": 96.2891,
+      "correct": 493,
+      "precision_M": "1,000",
+      "recall_M": "0,901",
+      "F1_M": "0,948",
+      "confusion_matrix_M_B": {
+        "M": [
+          172,
+          19
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.269,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 0.001 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:49.318924+00:00",
+      "source_file": "SMO_norm_RBF_G0.001_C100.txt",
+      "source_file_sha256": "77185664b5ab328430702b6272032e3a3b60afe46fc0c8eb5d30bfecf50d3747",
+      "incorrect": 19,
+      "exact_metrics_M": {
+        "precision": 1.0,
+        "recall": 0.900523560209424,
+        "F1": 0.9476584022038568
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G1_C1",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 1,
+      "C": 1,
+      "accuracy_percent": 97.6563,
+      "correct": 500,
+      "precision_M": "0,979",
+      "recall_M": "0,958",
+      "F1_M": "0,968",
+      "confusion_matrix_M_B": {
+        "M": [
+          183,
+          8
+        ],
+        "B": [
+          4,
+          317
+        ]
+      },
+      "elapsed_seconds": 0.274,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:49.594503+00:00",
+      "source_file": "SMO_norm_RBF_G1_C1.txt",
+      "source_file_sha256": "936abf2f53ab1ad5e5f9097b6cc083991c9756b8986375a534316fcfb9345f73",
+      "incorrect": 12,
+      "exact_metrics_M": {
+        "precision": 0.9786096256684492,
+        "recall": 0.9581151832460733,
+        "F1": 0.9682539682539683
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G1_C0.01",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 1,
+      "C": 0.01,
+      "accuracy_percent": 72.0703,
+      "correct": 369,
+      "precision_M": "1,000",
+      "recall_M": "0,251",
+      "F1_M": "0,402",
+      "confusion_matrix_M_B": {
+        "M": [
+          48,
+          143
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.402,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:49.997862+00:00",
+      "source_file": "SMO_norm_RBF_G1_C0.01.txt",
+      "source_file_sha256": "1c6468da93f116f97b91d97cad15b26b85053453eb614a06362aaa0a6e2fc223",
+      "incorrect": 143,
+      "exact_metrics_M": {
+        "precision": 1.0,
+        "recall": 0.2513089005235602,
+        "F1": 0.401673640167364
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G1_C100",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 1,
+      "C": 100,
+      "accuracy_percent": 96.875,
+      "correct": 496,
+      "precision_M": "0,963",
+      "recall_M": "0,953",
+      "F1_M": "0,958",
+      "confusion_matrix_M_B": {
+        "M": [
+          182,
+          9
+        ],
+        "B": [
+          7,
+          314
+        ]
+      },
+      "elapsed_seconds": 0.291,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 1 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:50.290430+00:00",
+      "source_file": "SMO_norm_RBF_G1_C100.txt",
+      "source_file_sha256": "aeb12c86df3a1c2f01bdee2eefa46a93754cdfc90959c81f38ad1d1428a9a483",
+      "incorrect": 16,
+      "exact_metrics_M": {
+        "precision": 0.9629629629629629,
+        "recall": 0.9528795811518325,
+        "F1": 0.9578947368421052
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G100_C1",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 100,
+      "C": 1,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.371,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "1",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 100 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:50.662326+00:00",
+      "source_file": "SMO_norm_RBF_G100_C1.txt",
+      "source_file_sha256": "cc8f3ca6d351613d5aecc0484496d40add6ce496d2f58555e2fe8ea17ce7f999",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G100_C0.01",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 100,
+      "C": 0.01,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.324,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "0.01",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 100 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:50.988264+00:00",
+      "source_file": "SMO_norm_RBF_G100_C0.01.txt",
+      "source_file_sha256": "b248cedaaa9e40e433ca1e38a7c71cf4ac4142ed8787775385db209d998a5bfd",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    },
+    {
+      "name": "SMO_norm_RBF_G100_C100",
+      "normalization": "norm",
+      "kernel": "RBF",
+      "parameter": 100,
+      "C": 100,
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "elapsed_seconds": 0.407,
+      "command": [
+        "/Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java",
+        "-Djava.awt.headless=true",
+        "-Xmx1024m",
+        "-cp",
+        "/Applications/weka-3.8.7.app/Contents/app/weka.jar",
+        "weka.classifiers.functions.SMO",
+        "-t",
+        "Lab7/wdbc-train.arff",
+        "-c",
+        "1",
+        "-x",
+        "10",
+        "-s",
+        "1",
+        "-v",
+        "-C",
+        "100",
+        "-N",
+        "0",
+        "-W",
+        "1",
+        "-K",
+        "weka.classifiers.functions.supportVector.RBFKernel -G 100 -C 250007"
+      ],
+      "completed_at": "2026-11-03T16:53:51.396271+00:00",
+      "source_file": "SMO_norm_RBF_G100_C100.txt",
+      "source_file_sha256": "976f490ce6468c9418420b86a027e10adb0df944969074955e64d8845befefb5",
+      "incorrect": 191,
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "cv_seed_printed_in_file": 1,
+      "validation_folds": 10,
+      "verified": true,
+      "scheme": null
+    }
+  ],
+  "dataset_sha256": "9a2d2930ecb72eaf8320c33b1846f23b02d3aaeed2d95a1fd4da8ad1170d290f",
+  "status": "complete",
+  "historical_interrupted_attempt": {
+    "name": "SMO_semNorm_Poly_E1_C100",
+    "C": 100,
+    "kernel": "Poly",
+    "exponent": 1,
+    "normalization": "none",
+    "reason": "Stopped at user request after more than 30 minutes, without final CV results",
+    "metrics": null
+  },
+  "baselines": [
+    {
+      "name": "zeroR",
+      "source_file": "zeroR.train",
+      "source_file_sha256": "7dc9bce06bb70b53d775a858b59df7ed601b6e5c1e42cb7190e02ec06e989dbc",
+      "accuracy_percent": 62.6953,
+      "correct": 321,
+      "incorrect": 191,
+      "precision_M": "?",
+      "recall_M": "0,000",
+      "F1_M": "?",
+      "exact_metrics_M": {
+        "precision": null,
+        "recall": 0.0,
+        "F1": null
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          0,
+          191
+        ],
+        "B": [
+          0,
+          321
+        ]
+      },
+      "cv_seed_printed_in_file": null,
+      "validation_folds": 10,
+      "verified": true
+    },
+    {
+      "name": "oneR",
+      "source_file": "oneR.train",
+      "source_file_sha256": "665c2fedcbf060aafdf9633ccc91ac6c55c4b49c4e0691328f8ecb9ae788a464",
+      "accuracy_percent": 88.8672,
+      "correct": 455,
+      "incorrect": 57,
+      "precision_M": "0,881",
+      "recall_M": "0,812",
+      "F1_M": "0,845",
+      "exact_metrics_M": {
+        "precision": 0.8806818181818182,
+        "recall": 0.8115183246073299,
+        "F1": 0.8446866485013624
+      },
+      "confusion_matrix_M_B": {
+        "M": [
+          155,
+          36
+        ],
+        "B": [
+          21,
+          300
+        ]
+      },
+      "cv_seed_printed_in_file": null,
+      "validation_folds": 10,
+      "verified": true
+    }
+  ],
+  "audit": {
+    "checked_at": "2026-11-03T22:11:08.441719+00:00",
+    "completed_smo_reports": 30,
+    "baseline_reports": 2,
+    "all_metrics_consistent": true,
+    "python_svc_excluded": true,
+    "excluded_paths": [
+      "Python_SVM",
+      "*_INTERROMPIDO.txt"
+    ],
+    "training_instances": 512,
+    "training_class_counts": {
+      "M": 191,
+      "B": 321
+    },
+    "notes": [
+      "Os 29 relat\u00f3rios CLI documentam seed de avalia\u00e7\u00e3o 1. A sa\u00edda do Explorer e os baselines n\u00e3o imprimem a seed de avalia\u00e7\u00e3o; a sess\u00e3o foi anteriormente configurada com seed 1.",
+      "O campo -W 1 do SMO n\u00e3o \u00e9 prova da seed da avalia\u00e7\u00e3o cruzada."
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+=== Run information ===
+Scheme: weka.classifiers.meta.AdaBoostM1
+Training file: train_ionosphere.arff
+Training SHA256: 864870c394d824a90a7e1ff10cbaac1ffeba450f008e913641153e9f0821f927
+Weka: 3.8.7
+Test mode: stratified 10-fold cross-validation; evaluation seed 1
+numIterations: 3; classifier seed: 1; base classifier: DecisionStump
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java --add-opens java.base/java.lang=ALL-UNNAMED -Djava.awt.headless=true -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.meta.AdaBoostM1 -t 'Lab8/train_ionosphere.arff' -c last -x 10 -s 1 -v -I 3 -S 1 -W weka.classifiers.trees.DecisionStump
+
+
+Options: -I 3 -S 1 -W weka.classifiers.trees.DecisionStump 
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+a05 <= 0.041440000000000005 : b
+a05 > 0.041440000000000005 : g
+a05 is missing : g
+
+Class distributions
+
+a05 <= 0.041440000000000005
+b	g	
+1.0	0.0	
+a05 > 0.041440000000000005
+b	g	
+0.20704845814977973	0.7929515418502202	
+a05 is missing
+b	g	
+0.3594306049822064	0.6405693950177936	
+
+
+Weight: 1.61
+
+Decision Stump
+
+Classifications
+
+a27 <= 0.9992099999999999 : g
+a27 > 0.9992099999999999 : b
+a27 is missing : b
+
+Class distributions
+
+a27 <= 0.9992099999999999
+b	g	
+0.3601857783472127	0.6398142216527872	
+a27 > 0.9992099999999999
+b	g	
+0.9505679427850232	0.04943205721497674	
+a27 is missing
+b	g	
+0.6153846153846148	0.3846153846153853	
+
+
+Weight: 1.23
+
+Decision Stump
+
+Classifications
+
+a07 <= 0.016989999999999998 : b
+a07 > 0.016989999999999998 : b
+a07 is missing : b
+
+Class distributions
+
+a07 <= 0.016989999999999998
+b	g	
+0.9902101438064368	0.00978985619356325	
+a07 > 0.016989999999999998
+b	g	
+0.6112351886088261	0.388764811391174	
+a07 is missing
+b	g	
+0.7180836848430376	0.2819163151569623	
+
+
+Weight: 0.93
+
+Number of performed Iterations: 3
+
+
+Time taken to build model: 0.06 seconds
+
+Time taken to perform cross-validation: 0.03 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         254               90.3915 %
+Incorrectly Classified Instances        27                9.6085 %
+Kappa statistic                          0.79  
+Mean absolute error                      0.2178
+Root mean squared error                  0.3011
+Relative absolute error                 47.2676 %
+Root relative squared error             62.7491 %
+Total Number of Instances              281     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,851    0,067    0,878      0,851    0,864      0,790    0,865     0,874     b
+                 0,933    0,149    0,918      0,933    0,926      0,790    0,865     0,854     g
+Weighted Avg.    0,904    0,119    0,903      0,904    0,904      0,790    0,865     0,861     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  86  15 |   a = b
+  12 168 |   b = g
+

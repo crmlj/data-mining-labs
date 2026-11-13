@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 500 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     ionosphere-weka.filters.supervised.instance.StratifiedRemoveFolds-S1-V-N5-F2
+Instances:    281
+Attributes:   35
+              a01
+              a02
+              a03
+              a04
+              a05
+              a06
+              a07
+              a08
+              a09
+              a10
+              a11
+              a12
+              a13
+              a14
+              a15
+              a16
+              a17
+              a18
+              a19
+              a20
+              a21
+              a22
+              a23
+              a24
+              a25
+              a26
+              a27
+              a28
+              a29
+              a30
+              a31
+              a32
+              a33
+              a34
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 500 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 0.33 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         261               92.8826 %
+Incorrectly Classified Instances        20                7.1174 %
+Kappa statistic                          0.8427
+Mean absolute error                      0.1494
+Root mean squared error                  0.2516
+Relative absolute error                 32.4255 %
+Root relative squared error             52.4299 %
+Total Number of Instances              281     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,861    0,033    0,935      0,861    0,897      0,844    0,955     0,951     b
+                 0,967    0,139    0,926      0,967    0,946      0,844    0,955     0,960     g
+Weighted Avg.    0,929    0,101    0,929      0,929    0,928      0,844    0,955     0,957     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  87  14 |   a = b
+   6 174 |   b = g
+

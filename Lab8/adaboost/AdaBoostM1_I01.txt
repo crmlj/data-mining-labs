@@ -1,0 +1,68 @@
+=== Run information ===
+Scheme: weka.classifiers.meta.AdaBoostM1
+Training file: train_ionosphere.arff
+Training SHA256: 864870c394d824a90a7e1ff10cbaac1ffeba450f008e913641153e9f0821f927
+Weka: 3.8.7
+Test mode: stratified 10-fold cross-validation; evaluation seed 1
+numIterations: 1; classifier seed: 1; base classifier: DecisionStump
+Command: /Applications/weka-3.8.7.app/Contents/runtime/Contents/Home/bin/java --add-opens java.base/java.lang=ALL-UNNAMED -Djava.awt.headless=true -cp /Applications/weka-3.8.7.app/Contents/app/weka.jar weka.classifiers.meta.AdaBoostM1 -t 'Lab8/train_ionosphere.arff' -c last -x 10 -s 1 -v -I 1 -S 1 -W weka.classifiers.trees.DecisionStump
+
+
+Options: -I 1 -S 1 -W weka.classifiers.trees.DecisionStump 
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: No boosting possible, one classifier used!
+Decision Stump
+
+Classifications
+
+a05 <= 0.041440000000000005 : b
+a05 > 0.041440000000000005 : g
+a05 is missing : g
+
+Class distributions
+
+a05 <= 0.041440000000000005
+b	g	
+1.0	0.0	
+a05 > 0.041440000000000005
+b	g	
+0.20704845814977973	0.7929515418502202	
+a05 is missing
+b	g	
+0.3594306049822064	0.6405693950177936	
+
+
+
+Time taken to build model: 0.06 seconds
+
+Time taken to perform cross-validation: 0.02 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         232               82.5623 %
+Incorrectly Classified Instances        49               17.4377 %
+Kappa statistic                          0.5782
+Mean absolute error                      0.2711
+Root mean squared error                  0.3724
+Relative absolute error                 58.8361 %
+Root relative squared error             77.6053 %
+Total Number of Instances              281     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,525    0,006    0,981      0,525    0,684      0,632    0,726     0,712     b
+                 0,994    0,475    0,789      0,994    0,880      0,632    0,726     0,760     g
+Weighted Avg.    0,826    0,306    0,858      0,826    0,809      0,632    0,726     0,743     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  53  48 |   a = b
+   1 179 |   b = g
+
